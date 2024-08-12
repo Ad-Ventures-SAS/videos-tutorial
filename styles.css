@@ -73,11 +73,25 @@ body {
 
 .mainContainer {
     display: flex;
+    position: relative;
     flex-direction: column;
     width: 100%;
     height: 100%;
-    padding: .75rem;
+    padding: 5.65rem .75rem .75rem;
     box-sizing: border-box;
+}
+
+.stickyHeader {
+    width: 100%;
+    position: fixed;
+    box-sizing: border-box;
+    padding: .75rem .7rem 1rem;
+    left: 0;
+    top: 0;
+    display: flex;
+    z-index: 2;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, #18191D 90%, #18191D03 100%);
 }
 
 .navContainer {
@@ -85,8 +99,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 0.25rem;
-    margin-bottom: .75rem;
+    margin-bottom: .5rem;
 }
 
 .backLabel {
@@ -167,7 +180,6 @@ body {
     width: 100%;
     box-sizing: border-box;
     align-items: center;
-    border: 1px solid var(--sacbe-beige);
     margin-top: .35rem;
     border-radius: .5rem;
     padding: .35rem;
@@ -239,6 +251,8 @@ body {
     color: white;
 }
 
+
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -247,4 +261,12 @@ body {
     100% {
         opacity: 1;
     }
+}
+
+@media screen and (max-width: 340px) {
+
+    .mainContainer {
+        padding: 6.65rem .75rem .75rem;
+    }
+
 }
