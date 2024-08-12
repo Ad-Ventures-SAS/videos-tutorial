@@ -85,7 +85,7 @@ body {
     width: 100%;
     position: fixed;
     box-sizing: border-box;
-    padding: .75rem .7rem 1rem;
+    padding: .75rem .7rem .75rem;
     left: 0;
     top: 0;
     display: flex;
