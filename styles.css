@@ -1,0 +1,250 @@
+@font-face {
+    font-family: "Tungsten";
+    src: url(assets/fonts/tungsten/Tungsten-Bold.ttf) format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Tungsten";
+    src: url(assets/fonts/tungsten/Tungsten-SemiBold.ttf) format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Tungsten";
+    src: url(assets/fonts/tungsten/Tungsten-SemiBold.ttf) format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Tungsten";
+    src: url(assets/fonts/tungsten/Tungsten-Medium.ttf) format("truetype");
+    font-weight: 450;
+}
+
+@font-face {
+    font-family: "Tungsten";
+    src: url(assets/fonts/tungsten/Tungsten-Light.ttf) format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Tungsten";
+    src: url(assets/fonts/tungsten/Tungsten-Book.ttf) format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Tungsten";
+    src: url(assets/fonts/tungsten/Tungsten-ExtraLight.ttf) format("truetype");
+    font-style: 200;
+}
+
+
+:root {
+    --font-family-primary: "Tungsten", Arial, Helvetica, sans-serif;
+    --sacbe-beige: #FFF6D2;
+    --sacbe-blue: #114550;
+    --font-size-regular: 40px;
+    --background-color: #18191D;
+    --theme-one: #CA8923;
+    --theme-two: #F56038;
+    --theme-three: #317C82;
+    --theme-four: #10454F;
+    --theme-five: #1A6F7E;
+}
+
+* {
+    font-family: var(--font-family-primary);
+    color: var(--sacbe-beige);
+    line-height: 0.8;
+}
+
+html {
+    font-size: var(--font-size-regular);
+    background: var(--background-color);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: .75rem;
+    box-sizing: border-box;
+}
+
+.navContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.25rem;
+    margin-bottom: .75rem;
+}
+
+.backLabel {
+    font-size: 25px;
+    font-weight: 450;
+    margin-left: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.backArrowIcon {
+    width: .5rem;
+    height: .5rem;
+
+}
+
+.title-container {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--sacbe-beige);
+    border-radius: .5rem;
+    padding: .1rem;
+    gap: .25rem;
+}
+
+
+.fadeIn {
+    animation: fadeIn 2s forwards;
+}
+
+.fadeInText {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    animation-delay: .2s;
+}
+
+.gradient-title-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    padding: .25rem .5rem;
+    background-image: linear-gradient(45deg, #0C0C0C 0%, #262728 90%);
+    border-radius: .35rem;
+}
+
+.sacbe-logo {
+    height: .55rem;
+}
+
+.master-card-logo {
+    height: .40rem;
+}
+
+.panel-title {
+    margin: 16px 0 12px 0;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1rem;
+}
+
+.videos-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    border: 1px solid var(--sacbe-beige);
+    margin-top: .35rem;
+    border-radius: .5rem;
+    padding: .35rem;
+    text-decoration: none;
+    border: none;
+}
+
+.video-item {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    color: inherit;
+}
+
+.mini-label-container {
+    display: flex;
+    width: 100%;
+}
+
+.mini-label {
+    margin: 0;
+    color: white;
+    background-color: black;
+    border-radius: 9999px;
+    text-align: center;
+    padding: 1px 7px 1px;
+    height: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: Sintony, sans-serif;
+    margin-bottom: .3rem;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-black {
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.video-title {
+    font-size: 35px;
+    font-weight: 450;
+    line-height: .65rem;
+    margin: 0;
+    color: inherit;
+}
+
+.video1 {
+    background-color: var(--theme-one);
+    color: white;
+}
+
+.video2 {
+    background-color: var(--sacbe-beige);
+    color: black;
+}
+
+.video3 {
+    background-color: var(--theme-three);
+    color: white;
+}
+
+.video4 {
+    background-color: var(--theme-two);
+    color: white;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
