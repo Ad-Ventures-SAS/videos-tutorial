@@ -229,6 +229,7 @@ body {
     line-height: .65rem;
     margin: 0;
     color: inherit;
+    text-transform: uppercase;
 }
 
 .video1 {
